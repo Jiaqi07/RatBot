@@ -66,6 +66,10 @@ async def on_message(message):
         update_encouragments(encouraging_message)
         await message.channel.send("New encouraging message added.")        
 
+    if msg.lower().startswith("$ping"):
+        name = msg9
+        await message.channel.send("@" + )
+
     if msg.lower().startswith("$del"):
         encouragments = []
         if "encouragements" in db.keys():
